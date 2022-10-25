@@ -9,3 +9,5 @@ extends:
 parser: '@typescript-eslint/parser'
 plugins: [react, '@typescript-eslint']
 root: true
+rules:
+  complexity: ['error', 10]
