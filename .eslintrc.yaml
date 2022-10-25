@@ -5,6 +5,7 @@ extends:
   - next/core-web-vitals
   - plugin:@typescript-eslint/recommended
   - plugin:@typescript-eslint/eslint-recommended
+  - plugin:react/recommended
   - prettier
 parser: '@typescript-eslint/parser'
 parserOptions:
@@ -16,3 +17,5 @@ rules:
   max-depth: ['error', 2]
   max-lines: ['error', 250]
   max-nested-callbacks: ['error', 3]
+  react/function-component-definition: ['error', { namedComponents: 'arrow-function' }]
+  react/react-in-jsx-scope: off
