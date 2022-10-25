@@ -1,3 +1,2 @@
-husky:
-  hooks:
-    commit-msg: 'commitlint --edit ${1}'
+hooks:
+  commit-msg: 'commitlint -c -e $GIT_PARAMS'
