@@ -29,3 +29,7 @@ rules:
   react/function-component-definition: ['error', { namedComponents: 'arrow-function' }]
   react/react-in-jsx-scope: off
   semi: ['error', 'always']
+  quotes:
+    - error
+    - single
+    - { 'avoidEscape': true }
