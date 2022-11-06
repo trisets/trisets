@@ -7,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "yarn lint:eslint && yarn lint:prettier",
+    "lint:eslint": "next lint",
+    "lint:prettier": "prettier --check .",
     "test": "vitest"
   },
   "dependencies": {
