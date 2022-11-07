@@ -23,6 +23,7 @@ plugins: [react, '@typescript-eslint']
 root: true
 rules:
   complexity: ['error', 10]
+  import/prefer-default-export: off
   max-depth: ['error', 2]
   max-lines: ['error', 250]
   max-nested-callbacks: ['error', 3]
@@ -33,3 +34,7 @@ rules:
     - error
     - single
     - { 'avoidEscape': true }
+overrides:
+  - files: ['**/*.jsx', '**/*.tsx']
+    rules:
+      import/prefer-default-export: error
