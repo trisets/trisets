@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# msw worker script
+public/mockServiceWorker.js
