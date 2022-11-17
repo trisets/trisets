@@ -1,2 +1,0 @@
-hooks:
-  commit-msg: 'commitlint -c -e $GIT_PARAMS'
