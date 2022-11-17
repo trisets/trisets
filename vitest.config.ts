@@ -1,4 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
+import path from 'path';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vitest/config';
 
@@ -15,5 +16,10 @@ export default defineConfig({
       functions: 100,
       lines: 80,
     }
+  },
+   resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './')
+    },
   },
 });
