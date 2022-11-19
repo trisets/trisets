@@ -2,6 +2,10 @@
 import { rest } from 'msw';
 
 const handlers = [
+  rest.post('/hello', (req, res, ctx) => {
+    sessionStorage.setItem('is-authenticated', 'true');
+    return res(ctx.status(200), ctx.json({ name: 'John Doe' }));
+  }),
   rest.post('/authenticate', (req, res, ctx) => {
     sessionStorage.setItem('is-authenticated', 'true');
 
