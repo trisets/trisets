@@ -1,5 +1,4 @@
 export type PageRoutingInfo = {
-    name: string;
-    to?: string;
-  };
-  
+  name: string;
+  to?: string;
+};
