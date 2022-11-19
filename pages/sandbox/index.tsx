@@ -12,7 +12,7 @@ interface SnackbarMessage {
   key: number;
 }
 
-const SandBox = () => {
+const SandBox = (): JSX.Element => {
   const [open, setOpen] = React.useState(false);
   const [snackPack, setSnackPack] = React.useState<readonly SnackbarMessage[]>([]);
   const [messageInfo, setMessageInfo] = React.useState<SnackbarMessage | undefined>(undefined);
@@ -29,18 +29,18 @@ const SandBox = () => {
     }
   }, [snackPack, messageInfo, open]);
 
-  const popUpMessage = (message: string) => {
+  const popUpMessage = (message: string): void => {
     setSnackPack((prev) => [...prev, { message, key: new Date().getTime() }]);
     setOpen(true);
   };
 
-  function signinExample() {
+  function signinExample(): void {
     fetch('/authenticate', { method: 'POST' }).then((_) => {
       popUpMessage('サインイン成功！');
     });
   }
 
-  function getUserExample() {
+  function getUserExample(): void {
     fetch('/user', { method: 'GET' }).then((res) => {
       if (res.ok) {
         popUpMessage('ユーザー情報取得成功！');
@@ -50,14 +50,14 @@ const SandBox = () => {
     });
   }
 
-  const handleClose = (event: React.SyntheticEvent | Event, reason?: string) => {
+  const handleClose = (event: React.SyntheticEvent | Event, reason?: string): void => {
     if (reason === 'clickaway') {
       return;
     }
     setOpen(false);
   };
 
-  const handleExited = () => {
+  const handleExited = (): void => {
     setMessageInfo(undefined);
   };
 
