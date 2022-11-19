@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import path from 'path';
 import react from '@vitejs/plugin-react';
+import path from 'path';
 import { defineConfig } from 'vitest/config';
 
 // https://vitejs.dev/config/
@@ -8,18 +8,19 @@ export default defineConfig({
   plugins: [react()],
   test: {
     environment: 'jsdom',
-    coverage:{
+    setupFiles: ['./mocks/'],
+    coverage: {
       all: true,
-      exclude: ['.next/*', '**/*.d.ts', '*.config.{js,ts}', '**/__test__/*'],
+      exclude: ['.next/*', '**/*.d.ts', '*.config.{js,ts}', 'mocks/*', 'public/', '**/__test__/*'],
       statements: 80,
       branches: 80,
       functions: 100,
       lines: 80,
-    }
+    },
   },
-   resolve: {
+  resolve: {
     alias: {
-      '@': path.resolve(__dirname, './')
+      '@': path.resolve(__dirname, './'),
     },
   },
 });
