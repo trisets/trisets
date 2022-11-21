@@ -11,7 +11,15 @@ export default defineConfig({
     setupFiles: ['./mocks/'],
     coverage: {
       all: true,
-      exclude: ['.next/*', '**/*.d.ts', '*.config.{js,ts}', 'mocks/*', 'public/', '**/__test__/*'],
+      exclude: [
+        '.next/*',
+        '**/*.d.ts',
+        '**/__test__/*',
+        '*.config.{js,ts}',
+        'mocks/*',
+        'pages/_app.tsx',
+        'public/',
+      ],
       statements: 80,
       branches: 80,
       functions: 100,
