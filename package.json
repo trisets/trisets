@@ -38,7 +38,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.31.10",
     "husky": "^8.0.2",
-    "jsdom": "^20.0.2",
+    "jsdom": "^20.0.3",
     "msw": "^0.47.4",
     "prettier": "^2.7.1",
     "prettier-plugin-organize-imports": "^3.1.1",
