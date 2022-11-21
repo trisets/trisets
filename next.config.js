@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   compiler: {
-    reactRemoveProperties: process.env.NODE_ENV === 'production'
+    reactRemoveProperties: process.env.NODE_ENV === 'production',
   },
   experimental: {
     esmExternals: false,
