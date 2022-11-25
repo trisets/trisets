@@ -8,6 +8,7 @@ const nextConfig = {
   experimental: {
     esmExternals: false,
   },
+  poweredByHeader: false,
 };
 
 module.exports = nextConfig;
