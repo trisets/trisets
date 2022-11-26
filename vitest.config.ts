@@ -23,6 +23,7 @@ export default defineConfig({
       ],
       statements: 80,
       branches: 80,
+      // FIXME: どこかのタイミングで80にする
       functions: 70,
       lines: 90,
     },
