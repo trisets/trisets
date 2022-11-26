@@ -19,7 +19,7 @@ export default defineConfig({
         'mocks/*',
         'pages/_app.tsx',
         'public/*',
-        'types/*'
+        'types/*',
       ],
       statements: 80,
       branches: 80,
