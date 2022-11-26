@@ -1,0 +1,37 @@
+// Vitest Snapshot v1
+
+exports[`/sandbox snapshot test 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-rux501"
+  >
+    <h1
+      class="MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom css-1vw6mcs-MuiTypography-root"
+    >
+      Example of Mock Server
+    </h1>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-sghohy-MuiButtonBase-root-MuiButton-root"
+      data-testid="sign-in"
+      tabindex="0"
+      type="button"
+    >
+      サインイン
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-sghohy-MuiButtonBase-root-MuiButton-root"
+      data-testid="get-user"
+      tabindex="0"
+      type="button"
+    >
+      ユーザー情報取得
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
