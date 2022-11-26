@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [react()],
   test: {
     environment: 'jsdom',
-    setupFiles: ['./mocks/'],
+    setupFiles: ['./__test__/vitest.setup.ts'],
     coverage: {
       all: true,
       exclude: [
