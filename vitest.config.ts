@@ -18,12 +18,13 @@ export default defineConfig({
         '*.config.{js,ts}',
         'mocks/*',
         'pages/_app.tsx',
-        'public/',
+        'public/*',
+        'types/*'
       ],
       statements: 80,
       branches: 80,
-      functions: 95,
-      lines: 80,
+      functions: 70,
+      lines: 90,
     },
   },
   resolve: {
