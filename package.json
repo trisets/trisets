@@ -10,7 +10,7 @@
     "lint": "yarn lint:eslint && yarn lint:prettier",
     "lint:eslint": "next lint",
     "lint:prettier": "prettier --check .",
-    "test": "cross-env NODE_OPTIONS=--no-experimental-fetch vitest run --coverage"
+    "test": "vitest run --coverage"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -33,7 +33,6 @@
     "@typescript-eslint/parser": "^5.42.1",
     "@vitejs/plugin-react": "^2.1.0",
     "@vitest/coverage-c8": "^0.25.2",
-    "cross-env": "^7.0.3",
     "eslint": "^8.27.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
