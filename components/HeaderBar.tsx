@@ -62,6 +62,7 @@ const HeaderBar = (): JSX.Element => {
           {/* ページ一覧 */}
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
+              data-testid="nav-icon"
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -72,6 +73,7 @@ const HeaderBar = (): JSX.Element => {
               <MenuIcon />
             </IconButton>
             <Menu
+              data-testid="nav-menu"
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -134,11 +136,12 @@ const HeaderBar = (): JSX.Element => {
           {/* アイコン部分 */}
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+              <IconButton data-testid="user-icon" onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
+              data-testid="user-menu"
               sx={{ mt: '45px' }}
               id="menu-appbar"
               anchorEl={anchorElUser}
