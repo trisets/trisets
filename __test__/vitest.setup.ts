@@ -1,8 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { afterAll, afterEach, beforeAll, expect } from 'vitest';
 // NOTE: いつか組み込みのfetchを利用する方針に変えられるかも
-import { fetch } from 'whatwg-fetch';
 import matchers from '@testing-library/jest-dom/matchers';
+import { fetch } from 'whatwg-fetch';
 import { server } from '../mocks/server';
 
 expect.extend(matchers);
