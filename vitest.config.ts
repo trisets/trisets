@@ -23,7 +23,7 @@ export default defineConfig({
       ],
       statements: 80,
       branches: 80,
-      // FIXME: どこかのタイミングで80にする
+      // FIXME: 関数の数が十分に増えたタイミングで80にする
       functions: 70,
       lines: 90,
     },
