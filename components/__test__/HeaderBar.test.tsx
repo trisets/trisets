@@ -1,11 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import matchers from '@testing-library/jest-dom/matchers';
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, expect, test } from 'vitest';
 import HeaderBar from '../HeaderBar';
-
-// FIXME: vitest.setup.tsで設定できていない
-expect.extend(matchers);
 
 afterEach(() => cleanup());
 
