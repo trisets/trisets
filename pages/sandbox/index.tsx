@@ -100,3 +100,4 @@ const SandBox = (): JSX.Element => {
 };
 
 export default SandBox;
+/* eslint-enable react/jsx-no-bind */
