@@ -8,6 +8,7 @@ extends:
   - airbnb-typescript
   - eslint:recommended
   - next/core-web-vitals
+  - plugin:eslint-comments/recommended
   - plugin:@typescript-eslint/recommended
   - plugin:@typescript-eslint/eslint-recommended
   - plugin:react/recommended
