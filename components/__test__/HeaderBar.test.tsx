@@ -31,3 +31,4 @@ test('Navigation menu', async () => {
     { timeout: 1000 }
   );
 });
+/* eslint-enable import/no-extraneous-dependencies */
