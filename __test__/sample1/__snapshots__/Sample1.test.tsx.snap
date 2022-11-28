@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`sample1 1`] = `
+<h1>
+  Page01
+</h1>
+`;

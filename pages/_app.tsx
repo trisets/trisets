@@ -15,3 +15,4 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => (
 );
 
 export default MyApp;
+/* eslint-enable react/jsx-props-no-spreading */

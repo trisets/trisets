@@ -75,10 +75,10 @@ const SandBox = (): JSX.Element => {
         <Typography variant="h4" component="h1" gutterBottom>
           Example of Mock Server
         </Typography>
-        <Button variant="contained" color="primary" onClick={signinExample}>
+        <Button variant="contained" color="primary" data-testid="sign-in" onClick={signinExample}>
           サインイン
         </Button>
-        <Button variant="contained" color="primary" onClick={getUserExample}>
+        <Button variant="contained" color="primary" data-testid="get-user" onClick={getUserExample}>
           ユーザー情報取得
         </Button>
       </Box>
@@ -100,3 +100,4 @@ const SandBox = (): JSX.Element => {
 };
 
 export default SandBox;
+/* eslint-enable react/jsx-no-bind */
